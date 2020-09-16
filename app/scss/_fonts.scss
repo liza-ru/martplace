@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'Quicksand-Regular', sans-serif;
+    src: url('../fonts/Quicksand-Regular.woff2') format ('.woff2'),
+         url('../fonts/Quicksand-Regular.woff') format ('.woff'),
+         url('../fonts/Quicksand-Regular.ttf') format ('.ttf');
+    font-weight: normal;
+    /*Насыщенность/начертание шрифта - "жирность"*/
+    font-style: normal;
+    /*Стилизация шрифта */
+    font-display: swap;
+    /*Метод загрузки шрифта*/
+}
