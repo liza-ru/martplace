@@ -1,6 +1,6 @@
+@import '_fonts';
 @import '_vars';
 @import '_global';
-@import '_fonts';
 
 html {
     box-sizing: border-box;
@@ -77,7 +77,7 @@ html {
        width: 100%;    
        padding: 12px 95px 15px 25px;
        background-color: transparent;
-    
+       outline: none;
    }
 
    .search-btn {
@@ -88,8 +88,67 @@ html {
        width: 70px;
        height: 45px;
        right: 0;
+       outline: none;
    }
 }
+
+.product-search {
+    height: 725px;
+    background-color: #294dcf;
+    text-align: center;
+    padding-top: 170px;
+    color: #f3f3f8;
+
+    &__title {
+        font-size: 60px;
+        line-height: 70px;
+
+        span {
+            font-family: 'Quicksand', sans-serif;
+            font-weight: 700;
+            display: block;
+        }
+    }
+
+    &__text {
+        font-family: 'Quicksand', sans-serif;
+        font-size: 20px;
+        line-height: 72px;
+        padding-top: 10px;
+    }
+
+    &__btn {
+        padding-top: 40px;
+        font-size: 16px;
+
+        .product-btn {
+            background-color: transparent;
+            border: 1px solid #fff;
+            border-radius: 30px;
+            color: #fff;
+            padding: 18px 32px;
+            outline: none;
+        }
+
+        .product-btn+.product-btn {
+            margin-left: 26px;
+        }
+
+        .product-btn:active {
+            background-color: #fff;
+            color: #0674ec;
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
 
 
 
