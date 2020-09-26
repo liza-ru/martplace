@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>MartPlace</title>
   <link rel="stylesheet" href="css/libs.min.css">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
@@ -74,16 +74,16 @@
    </div>
  </header>
 
- <section class="product-search">
+ <section class="product-choice">
    <div class="container">
-       <div class="product-search__title">
+       <div class="product-choice__title">
          Create Your Own
          <span> Digital Product Marketplace </span>
        </div>
-       <div class="product-search__text">
+       <div class="product-choice__text">
          MartPlace is the most powerful, & customizable template for Easy Digital Downloads Products
        </div>
-       <div class="product-search__btn">
+       <div class="product-choice__btn">
         <button class="product-btn">
           View All Products
         </button>
@@ -91,12 +91,347 @@
           Popular Products
         </button>
      </div>
+     <div class="product-shadow shadow-1"></div>
+     <div class="product-shadow shadow-2"></div>
+     <div class="product-search">
+         <form class="product-search__form">
+           <input class="product-search__input" type="text" placeholder="Search your products..." required>
+           <select class="product-search__select" size="1" >
+             <option autofocus>All Categories</option>
+             <option value="Categories">Categories 1</option>
+             <option value="Categories">Categories 2</option>
+             <option value="Categories">Categories 3</option>
+           </select>
+           <input class="product-search__search" type="submit" value="Search Now">
+         </form>
+     </div>
    </div>
  </section>
 
+ <section class="features">
+   <div class="container">
+     <div class="features__inner">
+       <div class="features__item">
+         <div class="features__item-img">
+           <img src="images/feature-1.png" alt="">
+         </div>
+         <div class="features__item-title">
+           Best UX Research
+         </div>
+         <div class="features__item-text">
+           Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+           the mattis, leo quam aliquet diam
+           congue is laoreet elit metus.
+         </div>
+        </div>
+        <div class="features__item">
+           <div class="features__item-img">
+             <img class="big-img" src="images/feature-2.png" alt="">
+           </div>
+           <div class="features__item-title">
+             Fully Responsive
+           </div>
+           <div class="features__item-text">
+             Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+             the mattis, leo quam aliquet diam
+             congue is laoreet elit metus.
+           </div>
+          </div>
+          <div class="features__item">
+             <div class="features__item-img">
+               <img src="images/feature-3.png" alt="">
+             </div>
+             <div class="features__item-title">
+               Buy & Sell Easily
+             </div>
+             <div class="features__item-text">
+               Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+               the mattis, leo quam aliquet diam
+               congue is laoreet elit metus.
+             </div>
+          </div>
+       </div>
+     </div>
+ </section>
+
+  <section class="product-page">
+    <div class="container">
+        <div class="product-page__header block__title">
+          <div class="product-page__title block__title-title">
+          Weekly Featured Products
+        </div>
+        <div class="product-page__btn">
+        </div>
+      </div>
+      <div class="product-page__inner">
+        <div class="product-page__img">
+        </div>
+        <div class="product-page__info info__block">
+          <div class="product-page__name info__block-title">
+            One Page Resume Template
+          </div>
+          <div class="product__item-source product-page__source info__block-source">
+            <a class="product__item-author info__block-author" href="#">
+              <div class="avatar" style="background-color:#7347c1;"></div>
+              AazzTech
+            </a>
+            <a class="product__item-category info__block-category" href="#">
+              WordPress
+            </a>
+          </div>
+          <div class="product-page__text info__block-text">
+            Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam
+            aliquet congue placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo
+            quam aliquet congue justo ut scelerisque.
+          </div>
+          <div class="product-page__tags category-btn">
+            <button>website</button>
+            <button>plugin</button>
+            <button>landing page</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="products">
+    <div class="container">
+       <div class="products__header block__title">
+         <div class="products__title block__title-title">
+           Newest Release Products
+         </div>
+         <div class="products__btn">
+           Filter by:
+         </div>
+      </div>
+      <div class="products__inner">
+        <div class="products__inner-btn block__title category-btn">
+          <button type="button" data-filter=".category-plugins">Plugins</button>
+          <button type="button" data-filter=".category-wordpress">WordPress</button>
+          <button type="button" data-filter=".category-site_template">Site Template</button>
+          <button type="button" data-filter=".category-psd_template">PSD Template</button>
+          <button type="button" data-filter=".category-joomla">Joomla</button>
+          <button type="button" data-filter=".category-user_interface">User Interface</button>
+          <button type="button" data-filter=".category-landing_page">Landing Page</button>
+          <button type="button" data-filter=".category-software">Software</button>
+        </div>
+        <div class="products__inner-box">
+          <div class="product__item mix category-plugins category-new" data-order="1">
+            <a class="product__item-img" style="background-image: url(images/content/Img.jpg);" href="#"></a>
+          <div class="product__item-content info__block">
+            <a class="product__item-title info__block-title" href="#">
+              E-commerce Shopping Cart
+            </a>
+            <div class="product__item-source info__block-source">
+              <a class="product__item-author info__block-author" href="#">
+                <div class="avatar" style="background-image: url(images/content/avatar.png);"></div>
+                Theme-Valley
+              </a>
+              <a class="product__item-category info__block-category" href="#">
+                  Plugin
+              </a>
+            </div>
+            <div class="product__item-text info__block-text">
+                Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+                the mattis, leo quam aliquet congue.
+            </div>
+            <div class="product__item-info">
+              <div class="product__item-value">
+              <div class="product__item-price">
+                $20
+              </div>
+              <div class="product__item-likes">
+                90
+              </div>
+              </div>
+              <div class="product__item-basket">
+                246
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="product__item mix category-plugins category-new" data-order="2">
+          <a class="product__item-img" style="background-image: url(images/content/Img.jpg);" href="#"></a>
+          <div class="product__item-content info__block">
+            <a class="product__item-title info__block-title" href="#">
+              Marketify Coffee Shop
+            </a>
+            <div class="product__item-source info__block-source">
+              <a class="product__item-author info__block-author" href="#">
+                <div class="avatar" style="background-color:#7347c1;"></div>
+                EchoTheme
+              </a>
+              <a class="product__item-category info__block-category" href="#">
+                PSD
+              </a>
+            </div>
+            <div class="product__item-text info__block-text">
+              Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+              the mattis, leo quam aliquet congue.
+            </div>
+            <div class="product__item-info">
+              <div class="product__item-value">
+                <div class="product__item-price">
+                  $18
+                </div>
+                <div class="product__item-likes">
+                  48
+                </div>
+              </div>
+              <div class="product__item-basket">
+                50
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="product__item mix category-plugins category-new" data-order="3">
+          <a class="product__item-img" style="background-image: url(images/content/Img.jpg);" href="#"></a>
+          <div class="product__item-content info__block">
+            <a class="product__item-title info__block-title" href="#">
+              Bryson - Portfolio Template
+            </a>
+            <div class="product__item-source info__block-source">
+              <a class="product__item-author info__block-author" href="#">
+                <div class="avatar" style="background-color:#7347c1;"></div>
+                Artcorner
+              </a>
+              <a class="product__item-category info__block-category" href="#">
+                HTML
+              </a>
+            </div>
+            <div class="product__item-text info__block-text">
+              Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+              the mattis, leo quam aliquet congue.
+            </div>
+            <div class="product__item-info">
+              <div class="product__item-value">
+                <div class="product__item-price">
+                  $10
+                </div>
+                <div class="product__item-likes">
+                  56
+                </div>
+              </div>
+              <div class="product__item-basket">
+                68
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="product__item mix category-plugins category-new" data-order="4">
+          <a class="product__item-img" style="background-image: url(images/content/Img.jpg);" href="#"></a>
+          <div class="product__item-content info__block">
+            <a class="product__item-title info__block-title" href="#">
+              E-commerce Shopping Cart
+            </a>
+            <div class="product__item-source info__block-source">
+              <a class="product__item-author info__block-author" href="#">
+                <div class="avatar" style="background-color:#7347c1;"></div>
+                Design-Hub
+              </a>
+              <a class="product__item-category info__block-category" href="#">
+                Plugin
+              </a>
+            </div>
+            <div class="product__item-text info__block-text">
+              Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+              the mattis, leo quam aliquet congue.
+            </div>
+            <div class="product__item-info">
+              <div class="product__item-value">
+                <div class="product__item-price">
+                  $10 - 50
+                </div>
+                <div class="product__item-likes">
+                  90
+                </div>
+              </div>
+              <div class="product__item-basket">
+                45
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="product__item mix category-plugins category-new" data-order="5">
+          <a class="product__item-img" style="background-image: url(images/content/Img.jpg);" href="#"></a>
+          <div class="product__item-content info__block">
+            <a class="product__item-title info__block-title" href="#">
+              Marketify Coffee Shop
+            </a>
+            <div class="product__item-source info__block-source">
+              <a class="product__item-author info__block-author" href="#">
+                <div class="avatar" style="background-color:#7347c1;"></div>
+                AazzTech
+              </a>
+              <a class="product__item-category info__block-category" href="#">
+                PSD
+              </a>
+            </div>
+            <div class="product__item-text info__block-text">
+              Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+              the mattis, leo quam aliquet congue.
+            </div>
+            <div class="product__item-info">
+              <div class="product__item-value">
+                <div class="product__item-price">
+                  $10 - 50
+                </div>
+                <div class="product__item-likes">
+                  48
+                </div>
+              </div>
+              <div class="product__item-basket">
+                50
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="product__item mix category-plugins category-new" data-order="6">
+          <a class="product__item-img" style="background-image: url(images/content/Img.jpg);" href="#"></a>
+          <div class="product__item-content info__block">
+            <a class="product__item-title info__block-title" href="#">
+              Bryson - Portfolio Template
+            </a>
+            <div class="product__item-source info__block-source">
+              <a class="product__item-author info__block-author" href="#">
+                <div class="avatar" style="background-color:#7347c1;"></div>
+                Coder-Lab
+              </a>
+              <a class="product__item-category info__block-category" href="#">
+                HTML
+              </a>
+            </div>
+            <div class="product__item-text info__block-text">
+              Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+              the mattis, leo quam aliquet congue.
+            </div>
+            <div class="product__item-info">
+              <div class="product__item-value">
+                <div class="product__item-price">
+                  $10
+                </div>
+                <div class="product__item-likes">
+                  56
+                </div>
+              </div>
+              <div class="product__item-basket">
+                68
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+        <div class="products__bottom-btn">
+          <button type="button" data-filter=".category-new">All New Products</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script>scr = "js/libs.min.js"</script>
-  <script>scr = "js/main.min.js"</script>
+  <script>scr = "js/main.js"</script>
 </body>
 
 </html>
