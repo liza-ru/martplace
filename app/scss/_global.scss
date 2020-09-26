@@ -72,16 +72,16 @@ body {
     }
 
     .info__block-source {
+        max-height: 30px;
         font-size: 15px;
 
         .info__block-author {
             color: #000;
-            
-            .avatar {
-                height: 28px;
-                width: 28px;
-                display: block;
-            }
+          
+            // .avatar {
+            //     height: 28px;
+            //     width: 28px;
+            // }
         }
 
          .info__block-category {
