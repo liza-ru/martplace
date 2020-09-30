@@ -5,208 +5,318 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>MartPlace</title>
+  <link rel="stylesheet" type="text/css" href="slick/slick.css">
+  <link rel="stylesheet" type="text/css" href="slick/slick-theme.css">
   <link rel="stylesheet" href="css/libs.min.css">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body>
 
- <header class="header">
-   <div class="header-top">
-     <div class="container">
-       <div class="header__top-inner">
-         <div class="header-logo-mark">
-           <a class="logo-mark" href="#">
-             <img src="images/logo.png" alt="">
-           </a>
-           </div>
-           <div class="header-logo-name">
-           <a class="logo-name" href="#">
-             <img src="images/martplace.png" alt="">
-           </a>
-         </div>
-         <div class="header__btn">
-           <a class="header__btn-link" href="">Become a Seller</a>
-         </div>
-       </div>
-     </div>
-   </div>
-   <div class="header__menu">
-     <div class="container">
-       <nav class="menu">
-         <ul class="menu__list">
-           <li>
-             <a href="#">
-               Home
-             </a>
-           </li>
-           <li>
-             <a href="#">
-               All products
-             </a>
-           </li>
-           <li>
-             <a href="#">
-               WordPress
-             </a>
-           </li>
-           <li>
-             <a href="#">
-               Festures
-             </a>
-           </li>
-           <li>
-             <a href="#">
-               Pages
-             </a>
-           </li>
-         </ul>
-         <div class="search">
-           <div class="search-form">
-             <input class="search-input" type="text" placeholder="Search product here..." required>
-             <button class="search-btn" type="submit">
-               <img src="images/icons/search.png" alt="">
-             </button>
-           </div>
-         </div>
-       </nav>
-     </div>
-   </div>
- </header>
-
- <section class="product-choice">
-   <div class="container">
-      <div class="product-choice__title">
-        Create Your Own
-        <span> Digital Product Marketplace </span>
+  <header class="header">
+    <div class="header__top">
+      <div class="container">
+        <div class="header__top-inner">
+          <div class="header__logo">
+            <a class="header__logo-mark" href="#">
+              <img src="images/logo.png" alt="logo">
+            </a>
+            <a class="header__logo-name" href="#">
+              <img src="images/martplace.png" alt="martplace">
+            </a>
+          </div>
+          <a class="header__btn-link" href="">Become a Seller</a>
+        </div>
       </div>
-      <div class="product-choice__text">
+    </div>
+    <div class="header__menu">
+      <div class="container">
+        <nav class="menu">
+          <ul class="menu__list">
+            <li>
+              <a href="#">
+                Home
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                All products
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                WordPress
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                Festures
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                Pages
+              </a>
+            </li>
+          </ul>
+          <div class="search-header">
+            <div class="search-header__form">
+              <input class="search-header__input" type="text" placeholder="Search product here..." required>
+              <button class="search-header__btn" type="submit">
+                <img class="search-header__img" src="images/icons/search.png" alt="search">
+              </button>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <section class="product__choice">
+    <div class="container">
+      <div class="product__choice-title">
+        Create Your Own
+        <span class="product__choice-title--bold"> Digital Product Marketplace </span>
+      </div>
+      <div class="product__choice-text">
         MartPlace is the most powerful, & customizable template for Easy Digital Downloads Products
       </div>
-      <div class="product-choice__btn">
+      <div class="product__choice-btn">
         <button class="product-btn">
           View All Products
         </button>
         <button class="product-btn">
           Popular Products
         </button>
-     </div>
-     <div class="product-shadow shadow-1"></div>
-     <div class="product-shadow shadow-2"></div>
-     <div class="product-search">
+      </div>
+      <div class="product-shadow shadow-1"></div>
+      <div class="product-shadow shadow-2"></div>
+      <div class="product-search">
         <form class="product-search__form">
           <input class="product-search__input" type="text" placeholder="Search your products..." required>
-          <select class="product-search__select" size="1" >
-            <option autofocus>All Categories</option>
-            <option value="Categories">Categories 1</option>
-            <option value="Categories">Categories 2</option>
-            <option value="Categories">Categories 3</option>
-           </select>
-           <input class="product-search__search" type="submit" value="Search Now">
-         </form>
+          <select class="product-search__select" size="1">
+            <option class="select-category" autofocus>All Categories</option>
+            <option class="select-category" value="Categories">Categories 1</option>
+            <option class="select-category" value="Categories">Categories 2</option>
+            <option class="select-category" value="Categories">Categories 3</option>
+          </select>
+          <input class="product-search__search" type="submit" value="Search Now">
+        </form>
       </div>
-   </div>
- </section>
+    </div>
+  </section>
 
- <section class="features">
-   <div class="container">
-     <div class="features__inner">
-       <div class="features__item">
-         <div class="features__item-img">
-           <img src="images/feature-1.png" alt="">
-         </div>
-         <div class="features__item-title">
-           Best UX Research
-         </div>
-         <div class="features__item-text">
-           Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
-           the mattis, leo quam aliquet diam
-           congue is laoreet elit metus.
-         </div>
-       </div>
-       <div class="features__item">
-           <div class="features__item-img">
-             <img class="big-img" src="images/feature-2.png" alt="">
-           </div>
-           <div class="features__item-title">
-             Fully Responsive
-           </div>
-           <div class="features__item-text">
-             Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
-             the mattis, leo quam aliquet diam
-             congue is laoreet elit metus.
-           </div>
-       </div>
-       <div class="features__item">
+  <section class="features">
+    <div class="container">
+      <div class="features__inner">
+        <div class="features__item">
           <div class="features__item-img">
-            <img src="images/feature-3.png" alt="">
+            <img class="feature-img" src="images/feature-1.png" alt="Best UX Research">
+          </div>
+          <div class="features__item-title">
+            Best UX Research
+          </div>
+          <div class="features__item-text">
+            Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+            the mattis, leo quam aliquet diam
+            congue is laoreet elit metus.
+          </div>
+        </div>
+        <div class="features__item">
+          <div class="features__item-img">
+            <img class="feature-img feature-img-big" src="images/feature-2.png" alt="Fully Responsive">
+          </div>
+          <div class="features__item-title">
+            Fully Responsive
+          </div>
+          <div class="features__item-text">
+            Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+            the mattis, leo quam aliquet diam
+            congue is laoreet elit metus.
+          </div>
+        </div>
+        <div class="features__item">
+          <div class="features__item-img">
+            <img class="feature-img" src="images/feature-3.png" alt="Buy & Sell Easily">
           </div>
           <div class="features__item-title">
             Buy & Sell Easily
           </div>
           <div class="features__item-text">
-            Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet diam congue is laoreet elit metus.
+            Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam
+            aliquet diam congue is laoreet elit metus.
           </div>
         </div>
-       </div>
-     </div>
- </section>
+      </div>
+    </div>
+  </section>
 
-  <section class="product-page">
+  <section class="product__page">
     <div class="container">
-      <div class="product-page__header block__title">
-        <div class="product-page__title block__title-title">
+      <div class="product__page-header block__title">
+        <div class="product__page-title block__title-title">
           Weekly Featured Products
         </div>
-        <div class="product-page__btn"></div>
+        <div class="product__page-btn"></div>
       </div>
-      <div class="product-page__inner">
-        <div class="product-page__img"></div>
-        <div class="product-page__info info__block">
-          <div class="product-page__name info__block-title">
-            One Page Resume Template
-          </div>
-          <div class="product__item-source product-page__source info__block-source">
-            <a class="product__item-author info__block-author" href="#">
-              <div class="avatar" style="background-image: url(images/content/avatar.png);"></div>
-              AazzTech
-            </a>
-            <a class="product__item-category info__block-category" href="#">
-              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16px"
-                height="16px">
-                <path fill-rule="evenodd" fill="rgb(115, 71, 193)"
-                  d="M0.166,7.666 C0.166,11.808 3.524,15.166 7.666,15.166 C11.808,15.166 15.166,11.808 15.166,7.666 C15.166,3.524 11.808,0.165 7.666,0.165 C3.524,0.165 0.166,3.524 0.166,7.666 ZM0.744,7.666 C0.744,6.662 0.960,5.710 1.344,4.849 L4.646,13.895 C2.337,12.773 0.744,10.405 0.744,7.666 ZM7.666,14.587 C6.987,14.587 6.331,14.488 5.711,14.306 L7.788,8.272 L9.916,14.101 C9.930,14.135 9.947,14.165 9.965,14.195 C9.246,14.449 8.472,14.587 7.666,14.587 ZM13.261,7.536 C13.655,6.548 13.788,5.759 13.788,5.056 C13.788,4.802 13.770,4.566 13.740,4.344 C14.280,5.331 14.587,6.462 14.587,7.666 C14.587,10.220 13.204,12.449 11.147,13.648 L13.261,7.536 ZM11.768,5.407 C12.031,5.868 12.339,6.461 12.339,7.316 C12.339,7.909 12.163,8.654 11.812,9.554 L11.122,11.860 L8.620,4.421 C9.038,4.397 9.412,4.355 9.412,4.355 C9.785,4.310 9.740,3.763 9.368,3.784 C9.368,3.784 8.247,3.872 7.523,3.872 C6.843,3.872 5.701,3.784 5.701,3.784 C5.327,3.763 5.284,4.333 5.656,4.355 C5.656,4.355 6.010,4.397 6.383,4.421 L7.460,7.376 L5.946,11.918 L3.425,4.421 C3.842,4.397 4.218,4.355 4.218,4.355 C4.591,4.310 4.545,3.763 4.173,3.784 C4.173,3.784 3.053,3.872 2.328,3.872 C2.198,3.872 2.046,3.869 1.883,3.864 C3.121,1.985 5.249,0.744 7.666,0.744 C9.469,0.744 11.109,1.433 12.340,2.562 C12.311,2.559 12.281,2.556 12.251,2.556 C11.570,2.556 11.089,3.148 11.089,3.784 C11.089,4.355 11.418,4.838 11.768,5.407 Z" />
-              </svg>
-              WordPress
-            </a>
-          </div>
-          <div class="product-page__text info__block-text">
-            Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam
-            aliquet congue placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo
-            quam aliquet congue justo ut scelerisque.
-          </div>
-          <div class="product-page__tags category-btn">
-            <button>website</button>
-            <button>plugin</button>
-            <button>landing page</button>
-          </div>
-          <div class="product__item-info">
-            <div class="product__item-value">
-              <div class="product__item-price">
-                $10 - 50
+      <div class="product__page-slider">
+        <div class="product__page-slide">
+          <div class="product__page-inner">
+            <div class="product__page-img"></div>
+            <div class="product__page-info info__block">
+              <div class="product__page-name info__block-title">
+                One Page Resume Template
               </div>
-              <button type="button" class="product__item-likes lnr">
-                46
-                <span class="button-title">add to favorites</span>
-              </button>
-              <button class="product__item-basket lnr">
-                634
-                <span class="button-title">add to cart</span>
-              </button>
+              <div class="product__item-source product__page-source info__block-source">
+                <a class="product__item-author info__block-author" href="#">
+                  <div class="avatar" style="background-image: url(images/content/avatar.png);"></div>
+                  AazzTech
+                </a>
+                <a class="product__item-category info__block-category" href="#">
+                  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16px"
+                    height="16px">
+                    <path fill-rule="evenodd" fill="rgb(115, 71, 193)"
+                      d="M0.166,7.666 C0.166,11.808 3.524,15.166 7.666,15.166 C11.808,15.166 15.166,11.808 15.166,7.666 C15.166,3.524 11.808,0.165 7.666,0.165 C3.524,0.165 0.166,3.524 0.166,7.666 ZM0.744,7.666 C0.744,6.662 0.960,5.710 1.344,4.849 L4.646,13.895 C2.337,12.773 0.744,10.405 0.744,7.666 ZM7.666,14.587 C6.987,14.587 6.331,14.488 5.711,14.306 L7.788,8.272 L9.916,14.101 C9.930,14.135 9.947,14.165 9.965,14.195 C9.246,14.449 8.472,14.587 7.666,14.587 ZM13.261,7.536 C13.655,6.548 13.788,5.759 13.788,5.056 C13.788,4.802 13.770,4.566 13.740,4.344 C14.280,5.331 14.587,6.462 14.587,7.666 C14.587,10.220 13.204,12.449 11.147,13.648 L13.261,7.536 ZM11.768,5.407 C12.031,5.868 12.339,6.461 12.339,7.316 C12.339,7.909 12.163,8.654 11.812,9.554 L11.122,11.860 L8.620,4.421 C9.038,4.397 9.412,4.355 9.412,4.355 C9.785,4.310 9.740,3.763 9.368,3.784 C9.368,3.784 8.247,3.872 7.523,3.872 C6.843,3.872 5.701,3.784 5.701,3.784 C5.327,3.763 5.284,4.333 5.656,4.355 C5.656,4.355 6.010,4.397 6.383,4.421 L7.460,7.376 L5.946,11.918 L3.425,4.421 C3.842,4.397 4.218,4.355 4.218,4.355 C4.591,4.310 4.545,3.763 4.173,3.784 C4.173,3.784 3.053,3.872 2.328,3.872 C2.198,3.872 2.046,3.869 1.883,3.864 C3.121,1.985 5.249,0.744 7.666,0.744 C9.469,0.744 11.109,1.433 12.340,2.562 C12.311,2.559 12.281,2.556 12.251,2.556 C11.570,2.556 11.089,3.148 11.089,3.784 C11.089,4.355 11.418,4.838 11.768,5.407 Z" />
+                  </svg>
+                  WordPress
+                </a>
+              </div>
+              <div class="product__page-text info__block-text">
+                Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam
+                aliquet congue placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis,
+                leo
+                quam aliquet congue justo ut scelerisque.
+              </div>
+              <div class="product__page-tags category-btn">
+                <button class="product__page-button">website</button>
+                <button class="product__page-button">plugin</button>
+                <button class="product__page-button">landing page</button>
+              </div>
+              <div class="product__item-info">
+                <div class="product__item-value">
+                  <div class="product__item-price">
+                    $10 - 50
+                  </div>
+                  <button type="button" class="product__item-likes lnr">
+                    46
+                    <span class="button-title">add to favorites</span>
+                  </button>
+                  <button class="product__item-basket lnr">
+                    634
+                    <span class="button-title">add to cart</span>
+                  </button>
+                </div>
+                <button type="button" class="product__item-rating zmdi">
+                  <span class="button-title">read reviews</span>
+                </button>
+              </div>
             </div>
-            <button type="button" class="product__item-rating zmdi">
-              <span class="button-title">read reviews</span>
-            </button>
+          </div>
+        </div>
+        <div class="product__page-slide">
+          <div class="product__page-inner">
+            <div class="product__page-img"></div>
+            <div class="product__page-info info__block">
+              <div class="product__page-name info__block-title">
+                Two Page Resume Template
+              </div>
+              <div class="product__item-source product__page-source info__block-source">
+                <a class="product__item-author info__block-author" href="#">
+                  <div class="avatar" style="background-image: url(images/content/avatar.png);"></div>
+                  EchoTheme
+                </a>
+                <a class="product__item-category info__block-category" href="#">
+                  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="13px"
+                    height="17px">
+                    <path fill-rule="evenodd" fill="rgb(115, 71, 193)"
+                      d="M11.182,16.999 L1.818,16.999 C0.816,16.999 -0.000,16.188 -0.000,15.189 L-0.000,1.808 C-0.000,0.811 0.816,-0.001 1.818,-0.001 L8.681,-0.001 L13.000,4.281 L13.000,15.189 C13.000,16.188 12.184,16.999 11.182,16.999 ZM11.859,4.720 L9.525,4.727 C8.829,4.727 8.264,4.164 8.264,3.472 L8.264,1.102 L1.818,1.108 C1.430,1.108 1.114,1.422 1.114,1.808 L1.114,15.189 C1.114,15.577 1.430,15.891 1.818,15.891 L11.182,15.891 C11.570,15.891 11.885,15.577 11.886,15.189 L11.859,4.720 ZM9.020,8.900 C9.836,9.200 10.220,9.622 10.220,10.271 C10.220,11.043 9.623,11.698 8.354,11.698 C7.826,11.698 7.305,11.561 7.044,11.418 L7.257,10.558 C7.538,10.702 7.970,10.845 8.416,10.845 C8.896,10.845 9.150,10.646 9.150,10.346 C9.150,10.059 8.931,9.896 8.375,9.697 C7.607,9.431 7.106,9.008 7.106,8.340 C7.106,7.555 7.765,6.954 8.855,6.954 C9.376,6.954 9.760,7.064 10.035,7.187 L9.802,8.026 C9.616,7.937 9.287,7.808 8.834,7.808 C8.382,7.808 8.162,8.012 8.162,8.251 C8.162,8.544 8.423,8.674 9.020,8.900 ZM4.627,10.005 C4.490,10.005 4.367,9.998 4.271,9.985 L4.271,11.629 L3.235,11.629 L3.235,7.091 C3.558,7.036 4.010,6.995 4.648,6.995 C5.293,6.995 5.752,7.118 6.061,7.363 C6.356,7.596 6.555,7.978 6.555,8.429 C6.555,8.879 6.404,9.261 6.130,9.521 C5.773,9.855 5.245,10.005 4.627,10.005 ZM4.703,7.780 C4.490,7.780 4.346,7.800 4.271,7.821 L4.271,9.179 C4.360,9.200 4.470,9.206 4.621,9.206 C5.176,9.206 5.519,8.927 5.519,8.456 C5.519,8.033 5.224,7.780 4.703,7.780 Z" />
+                  </svg>
+                  PSD
+                </a>
+              </div>
+              <div class="product__page-text info__block-text">
+                Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam
+                aliquet congue placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis,
+                leo
+                quam aliquet congue justo ut scelerisque.
+              </div>
+              <div class="product__page-tags category-btn">
+                <button class="product__page-button">website</button>
+                <button class="product__page-button">plugin</button>
+                <button class="product__page-button">landing page</button>
+              </div>
+              <div class="product__item-info">
+                <div class="product__item-value">
+                  <div class="product__item-price">
+                    $40
+                  </div>
+                  <button type="button" class="product__item-likes lnr">
+                    52
+                    <span class="button-title">add to favorites</span>
+                  </button>
+                  <button class="product__item-basket lnr">
+                    112
+                    <span class="button-title">add to cart</span>
+                  </button>
+                </div>
+                <button type="button" class="product__item-rating zmdi">
+                  <span class="button-title">read reviews</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="product__page-slide">
+          <div class="product__page-inner">
+            <div class="product__page-img"></div>
+            <div class="product__page-info info__block">
+              <div class="product__page-name info__block-title">
+                Three Page Resume Template
+              </div>
+              <div class="product__item-source product__page-source info__block-source">
+                <a class="product__item-author info__block-author" href="#">
+                  <div class="avatar" style="background-image: url(images/content/avatar.png);"></div>
+                  EchoTheme
+                </a>
+                <a class="product__item-category info__block-category" href="#">
+                  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="13px"
+                    height="17px">
+                    <path fill-rule="evenodd" fill="rgb(115, 71, 193)"
+                      d="M11.182,16.999 L1.818,16.999 C0.816,16.999 -0.000,16.188 -0.000,15.189 L-0.000,1.808 C-0.000,0.811 0.816,-0.001 1.818,-0.001 L8.681,-0.001 L13.000,4.281 L13.000,15.189 C13.000,16.188 12.184,16.999 11.182,16.999 ZM11.859,4.720 L9.525,4.727 C8.829,4.727 8.264,4.164 8.264,3.472 L8.264,1.102 L1.818,1.108 C1.430,1.108 1.114,1.422 1.114,1.808 L1.114,15.189 C1.114,15.577 1.430,15.891 1.818,15.891 L11.182,15.891 C11.570,15.891 11.885,15.577 11.886,15.189 L11.859,4.720 ZM9.020,8.900 C9.836,9.200 10.220,9.622 10.220,10.271 C10.220,11.043 9.623,11.698 8.354,11.698 C7.826,11.698 7.305,11.561 7.044,11.418 L7.257,10.558 C7.538,10.702 7.970,10.845 8.416,10.845 C8.896,10.845 9.150,10.646 9.150,10.346 C9.150,10.059 8.931,9.896 8.375,9.697 C7.607,9.431 7.106,9.008 7.106,8.340 C7.106,7.555 7.765,6.954 8.855,6.954 C9.376,6.954 9.760,7.064 10.035,7.187 L9.802,8.026 C9.616,7.937 9.287,7.808 8.834,7.808 C8.382,7.808 8.162,8.012 8.162,8.251 C8.162,8.544 8.423,8.674 9.020,8.900 ZM4.627,10.005 C4.490,10.005 4.367,9.998 4.271,9.985 L4.271,11.629 L3.235,11.629 L3.235,7.091 C3.558,7.036 4.010,6.995 4.648,6.995 C5.293,6.995 5.752,7.118 6.061,7.363 C6.356,7.596 6.555,7.978 6.555,8.429 C6.555,8.879 6.404,9.261 6.130,9.521 C5.773,9.855 5.245,10.005 4.627,10.005 ZM4.703,7.780 C4.490,7.780 4.346,7.800 4.271,7.821 L4.271,9.179 C4.360,9.200 4.470,9.206 4.621,9.206 C5.176,9.206 5.519,8.927 5.519,8.456 C5.519,8.033 5.224,7.780 4.703,7.780 Z" />
+                  </svg>
+                  PSD
+                </a>
+              </div>
+              <div class="product__page-text info__block-text">
+                Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam
+                aliquet congue placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis,
+                leo
+                quam aliquet congue justo ut scelerisque.
+              </div>
+              <div class="product__page-tags category-btn">
+                <button class="product__page-button">website</button>
+                <button class="product__page-button">plugin</button>
+                <button class="product__page-button">landing page</button>
+              </div>
+              <div class="product__item-info">
+                <div class="product__item-value">
+                  <div class="product__item-price">
+                    $40
+                  </div>
+                  <button type="button" class="product__item-likes lnr">
+                    52
+                    <span class="button-title">add to favorites</span>
+                  </button>
+                  <button class="product__item-basket lnr">
+                    112
+                    <span class="button-title">add to cart</span>
+                  </button>
+                </div>
+                <button type="button" class="product__item-rating zmdi">
+                  <span class="button-title">read reviews</span>
+                </button>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -214,13 +324,13 @@
   </section>
   <section class="products">
     <div class="container">
-       <div class="products__header block__title">
-         <div class="products__title block__title-title">
-           Newest Release Products
-         </div>
-         <div class="products__btn">
-           Filter by:
-         </div>
+      <div class="products__header block__title">
+        <div class="products__title block__title-title">
+          Newest Release Products
+        </div>
+        <div class="products__btn">
+          Filter by:
+        </div>
       </div>
       <div class="products__inner">
         <div class="products__inner-button block__title category-btn">
@@ -229,7 +339,8 @@
           <button class="products__inner-btn" type="button" data-filter=".category-site_template">Site Template</button>
           <button class="products__inner-btn" type="button" data-filter=".category-psd_template">PSD Template</button>
           <button class="products__inner-btn" type="button" data-filter=".category-joomla">Joomla</button>
-          <button class="products__inner-btn" type="button" data-filter=".category-user_interface">User Interface</button>
+          <button class="products__inner-btn" type="button" data-filter=".category-user_interface">User
+            Interface</button>
           <button class="products__inner-btn" type="button" data-filter=".category-landing_page">Landing Page</button>
           <button class="products__inner-btn" type="button" data-filter=".category-software">Software</button>
         </div>
@@ -237,42 +348,43 @@
           <div class="product__item mix category-plugins category-new" data-order="1">
             <a class="product__item-img" style="background-image: url(images/content/Img.jpg);" href="#"></a>
             <div class="product__item-content info__block">
-            <a class="product__item-title info__block-title" href="#">
-              E-commerce Shopping Cart
-            </a>
-            <div class="product__item-source info__block-source">
-              <a class="product__item-author info__block-author" href="#">
-                <span class="avatar" style="background-image: url(images/content/avatar.png);"></span>
-                Theme-Valley
+              <a class="product__item-title info__block-title" href="#">
+                E-commerce Shopping Cart
               </a>
-              <a class="product__item-category info__block-category" href="#">
-                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16px"
-                  height="16px">
-                  <path fill-rule="evenodd" fill="rgb(115, 71, 193)"
-                    d="M0.167,7.665 C0.167,11.808 3.524,15.166 7.667,15.166 C11.808,15.166 15.167,11.808 15.167,7.665 C15.167,3.524 11.808,0.165 7.667,0.165 C3.524,0.165 0.167,3.524 0.167,7.665 ZM0.744,7.665 C0.744,6.662 0.961,5.710 1.344,4.848 L4.646,13.895 C2.337,12.774 0.744,10.405 0.744,7.665 ZM7.667,14.587 C6.987,14.587 6.331,14.488 5.711,14.306 L7.788,8.272 L9.916,14.101 C9.930,14.135 9.947,14.165 9.965,14.195 C9.246,14.449 8.472,14.587 7.667,14.587 ZM13.261,7.536 C13.655,6.548 13.788,5.759 13.788,5.056 C13.788,4.802 13.770,4.566 13.740,4.344 C14.280,5.331 14.587,6.462 14.587,7.666 C14.587,10.220 13.204,12.449 11.147,13.648 L13.261,7.536 ZM11.768,5.407 C12.031,5.868 12.339,6.461 12.339,7.316 C12.339,7.909 12.163,8.654 11.812,9.554 L11.122,11.860 L8.620,4.421 C9.038,4.397 9.412,4.355 9.412,4.355 C9.785,4.310 9.740,3.763 9.368,3.784 C9.368,3.784 8.247,3.872 7.523,3.872 C6.843,3.872 5.701,3.784 5.701,3.784 C5.327,3.763 5.284,4.333 5.656,4.355 C5.656,4.355 6.010,4.397 6.383,4.421 L7.461,7.376 L5.946,11.918 L3.425,4.421 C3.842,4.397 4.218,4.355 4.218,4.355 C4.591,4.310 4.545,3.763 4.173,3.784 C4.173,3.784 3.053,3.872 2.328,3.872 C2.198,3.872 2.046,3.869 1.883,3.864 C3.121,1.985 5.249,0.744 7.667,0.744 C9.469,0.744 11.109,1.433 12.340,2.561 C12.311,2.559 12.281,2.556 12.251,2.556 C11.570,2.556 11.089,3.147 11.089,3.784 C11.089,4.355 11.418,4.837 11.768,5.407 Z" />
-                </svg>
+              <div class="product__item-source info__block-source">
+                <a class="product__item-author info__block-author" href="#">
+                  <span class="avatar" style="background-image: url(images/content/avatar.png);"></span>
+                  Theme-Valley
+                </a>
+                <a class="product__item-category info__block-category" href="#">
+                  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16px"
+                    height="16px">
+                    <path fill-rule="evenodd" fill="rgb(115, 71, 193)"
+                      d="M0.167,7.665 C0.167,11.808 3.524,15.166 7.667,15.166 C11.808,15.166 15.167,11.808 15.167,7.665 C15.167,3.524 11.808,0.165 7.667,0.165 C3.524,0.165 0.167,3.524 0.167,7.665 ZM0.744,7.665 C0.744,6.662 0.961,5.710 1.344,4.848 L4.646,13.895 C2.337,12.774 0.744,10.405 0.744,7.665 ZM7.667,14.587 C6.987,14.587 6.331,14.488 5.711,14.306 L7.788,8.272 L9.916,14.101 C9.930,14.135 9.947,14.165 9.965,14.195 C9.246,14.449 8.472,14.587 7.667,14.587 ZM13.261,7.536 C13.655,6.548 13.788,5.759 13.788,5.056 C13.788,4.802 13.770,4.566 13.740,4.344 C14.280,5.331 14.587,6.462 14.587,7.666 C14.587,10.220 13.204,12.449 11.147,13.648 L13.261,7.536 ZM11.768,5.407 C12.031,5.868 12.339,6.461 12.339,7.316 C12.339,7.909 12.163,8.654 11.812,9.554 L11.122,11.860 L8.620,4.421 C9.038,4.397 9.412,4.355 9.412,4.355 C9.785,4.310 9.740,3.763 9.368,3.784 C9.368,3.784 8.247,3.872 7.523,3.872 C6.843,3.872 5.701,3.784 5.701,3.784 C5.327,3.763 5.284,4.333 5.656,4.355 C5.656,4.355 6.010,4.397 6.383,4.421 L7.461,7.376 L5.946,11.918 L3.425,4.421 C3.842,4.397 4.218,4.355 4.218,4.355 C4.591,4.310 4.545,3.763 4.173,3.784 C4.173,3.784 3.053,3.872 2.328,3.872 C2.198,3.872 2.046,3.869 1.883,3.864 C3.121,1.985 5.249,0.744 7.667,0.744 C9.469,0.744 11.109,1.433 12.340,2.561 C12.311,2.559 12.281,2.556 12.251,2.556 C11.570,2.556 11.089,3.147 11.089,3.784 C11.089,4.355 11.418,4.837 11.768,5.407 Z" />
+                  </svg>
                   Plugin
-              </a>
-            </div>
-            <div class="product__item-text info__block-text">
-              Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam aliquet congue.
-            </div>
-            <div class="product__item-info">
-              <div class="product__item-value">
-                <div class="product__item-price">
-                $20
+                </a>
+              </div>
+              <div class="product__item-text info__block-text">
+                Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque the mattis, leo quam
+                aliquet congue.
+              </div>
+              <div class="product__item-info">
+                <div class="product__item-value">
+                  <div class="product__item-price">
+                    $20
+                  </div>
+                  <button type="button" class="product__item-likes lnr">
+                    90
+                    <span class="button-title">add to favorites</span>
+                  </button>
                 </div>
-                <button type="button" class="product__item-likes lnr">
-                90
-                  <span class="button-title">add to favorites</span>
+                <button class="product__item-basket lnr">
+                  246
+                  <span class="button-title">add to cart</span>
                 </button>
               </div>
-              <button class="product__item-basket lnr">
-                246
-                <span class="button-title">add to cart</span>
-              </button>
             </div>
-          </div>
           </div>
           <div class="product__item mix category-plugins" data-order="2">
             <a class="product__item-img" style="background-image: url(images/content/Img.jpg);" href="#"></a>
@@ -280,217 +392,217 @@
               <a class="product__item-title info__block-title" href="#">
                 Marketify Coffee Shop
               </a>
-            <div class="product__item-source info__block-source">
-              <a class="product__item-author info__block-author" href="#">
-                <span class="avatar" style="background-image: url(images/content/avatar.png);"></span>
-                EchoTheme
-              </a>
-              <a class="product__item-category info__block-category" href="#">
-                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="13px"
-                  height="17px">
-                  <path fill-rule="evenodd" fill="rgb(115, 71, 193)"
-                    d="M11.182,16.999 L1.818,16.999 C0.816,16.999 -0.000,16.188 -0.000,15.189 L-0.000,1.808 C-0.000,0.811 0.816,-0.001 1.818,-0.001 L8.681,-0.001 L13.000,4.281 L13.000,15.189 C13.000,16.188 12.184,16.999 11.182,16.999 ZM11.859,4.720 L9.525,4.727 C8.829,4.727 8.264,4.164 8.264,3.472 L8.264,1.102 L1.818,1.108 C1.430,1.108 1.114,1.422 1.114,1.808 L1.114,15.189 C1.114,15.577 1.430,15.891 1.818,15.891 L11.182,15.891 C11.570,15.891 11.885,15.577 11.886,15.189 L11.859,4.720 ZM9.020,8.900 C9.836,9.200 10.220,9.622 10.220,10.271 C10.220,11.043 9.623,11.698 8.354,11.698 C7.826,11.698 7.305,11.561 7.044,11.418 L7.257,10.558 C7.538,10.702 7.970,10.845 8.416,10.845 C8.896,10.845 9.150,10.646 9.150,10.346 C9.150,10.059 8.931,9.896 8.375,9.697 C7.607,9.431 7.106,9.008 7.106,8.340 C7.106,7.555 7.765,6.954 8.855,6.954 C9.376,6.954 9.760,7.064 10.035,7.187 L9.802,8.026 C9.616,7.937 9.287,7.808 8.834,7.808 C8.382,7.808 8.162,8.012 8.162,8.251 C8.162,8.544 8.423,8.674 9.020,8.900 ZM4.627,10.005 C4.490,10.005 4.367,9.998 4.271,9.985 L4.271,11.629 L3.235,11.629 L3.235,7.091 C3.558,7.036 4.010,6.995 4.648,6.995 C5.293,6.995 5.752,7.118 6.061,7.363 C6.356,7.596 6.555,7.978 6.555,8.429 C6.555,8.879 6.404,9.261 6.130,9.521 C5.773,9.855 5.245,10.005 4.627,10.005 ZM4.703,7.780 C4.490,7.780 4.346,7.800 4.271,7.821 L4.271,9.179 C4.360,9.200 4.470,9.206 4.621,9.206 C5.176,9.206 5.519,8.927 5.519,8.456 C5.519,8.033 5.224,7.780 4.703,7.780 Z" />
-                </svg>
-                PSD
-              </a>
-            </div>
-            <div class="product__item-text info__block-text">
-              Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
-              the mattis, leo quam aliquet congue.
-            </div>
-            <div class="product__item-info">
-              <div class="product__item-value">
-                <div class="product__item-price">
-                  $18
-                </div>
-                <button type="button" class="product__item-likes lnr">
-                  48
-                  <span class="button-title">add to favorites</span>
-                </button>
+              <div class="product__item-source info__block-source">
+                <a class="product__item-author info__block-author" href="#">
+                  <span class="avatar" style="background-image: url(images/content/avatar.png);"></span>
+                  EchoTheme
+                </a>
+                <a class="product__item-category info__block-category" href="#">
+                  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="13px"
+                    height="17px">
+                    <path fill-rule="evenodd" fill="rgb(115, 71, 193)"
+                      d="M11.182,16.999 L1.818,16.999 C0.816,16.999 -0.000,16.188 -0.000,15.189 L-0.000,1.808 C-0.000,0.811 0.816,-0.001 1.818,-0.001 L8.681,-0.001 L13.000,4.281 L13.000,15.189 C13.000,16.188 12.184,16.999 11.182,16.999 ZM11.859,4.720 L9.525,4.727 C8.829,4.727 8.264,4.164 8.264,3.472 L8.264,1.102 L1.818,1.108 C1.430,1.108 1.114,1.422 1.114,1.808 L1.114,15.189 C1.114,15.577 1.430,15.891 1.818,15.891 L11.182,15.891 C11.570,15.891 11.885,15.577 11.886,15.189 L11.859,4.720 ZM9.020,8.900 C9.836,9.200 10.220,9.622 10.220,10.271 C10.220,11.043 9.623,11.698 8.354,11.698 C7.826,11.698 7.305,11.561 7.044,11.418 L7.257,10.558 C7.538,10.702 7.970,10.845 8.416,10.845 C8.896,10.845 9.150,10.646 9.150,10.346 C9.150,10.059 8.931,9.896 8.375,9.697 C7.607,9.431 7.106,9.008 7.106,8.340 C7.106,7.555 7.765,6.954 8.855,6.954 C9.376,6.954 9.760,7.064 10.035,7.187 L9.802,8.026 C9.616,7.937 9.287,7.808 8.834,7.808 C8.382,7.808 8.162,8.012 8.162,8.251 C8.162,8.544 8.423,8.674 9.020,8.900 ZM4.627,10.005 C4.490,10.005 4.367,9.998 4.271,9.985 L4.271,11.629 L3.235,11.629 L3.235,7.091 C3.558,7.036 4.010,6.995 4.648,6.995 C5.293,6.995 5.752,7.118 6.061,7.363 C6.356,7.596 6.555,7.978 6.555,8.429 C6.555,8.879 6.404,9.261 6.130,9.521 C5.773,9.855 5.245,10.005 4.627,10.005 ZM4.703,7.780 C4.490,7.780 4.346,7.800 4.271,7.821 L4.271,9.179 C4.360,9.200 4.470,9.206 4.621,9.206 C5.176,9.206 5.519,8.927 5.519,8.456 C5.519,8.033 5.224,7.780 4.703,7.780 Z" />
+                  </svg>
+                  PSD
+                </a>
               </div>
+              <div class="product__item-text info__block-text">
+                Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+                the mattis, leo quam aliquet congue.
+              </div>
+              <div class="product__item-info">
+                <div class="product__item-value">
+                  <div class="product__item-price">
+                    $18
+                  </div>
+                  <button type="button" class="product__item-likes lnr">
+                    48
+                    <span class="button-title">add to favorites</span>
+                  </button>
+                </div>
                 <button class="product__item-basket lnr">
                   50
                   <span class="button-title">add to cart</span>
                 </button>
+              </div>
             </div>
-          </div>
           </div>
           <div class="product__item mix category-wordpress category-new" data-order="3">
-          <a class="product__item-img" style="background-image: url(images/content/Img.jpg);" href="#"></a>
-          <div class="product__item-content info__block">
-            <a class="product__item-title info__block-title" href="#">
-              Bryson - Portfolio Template
-            </a>
-            <div class="product__item-source info__block-source">
-              <a class="product__item-author info__block-author" href="#">
-                <span class="avatar" style="background-image: url(images/content/avatar.png);"></span>
-                Artcorner
+            <a class="product__item-img" style="background-image: url(images/content/Img.jpg);" href="#"></a>
+            <div class="product__item-content info__block">
+              <a class="product__item-title info__block-title" href="#">
+                Bryson - Portfolio Template
               </a>
-              <a class="product__item-category info__block-category" href="#">
-                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="15px"
-                  height="17px">
-                  <image x="0px" y="0px" width="15px" height="17px"
-                    xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAARCAMAAAA11AaTAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAABTVBMVEX///9pSb1pSb1oSLxpSbxoSbxoSLxpSb1pSb1oSLxpSb1oSLxoSLxoSbxoSLxpSbxoSLxoSLxpSb1pSb1pSb1pSb1oSLxpSb1oSLxpSb1oSLxpSb1oSLxpSb1oSLxoSLxpSb1pSbxpSb1oSLxoSbxpSb1oSLxpSbxoSbxoSbxoSLxoSbxpSb1oSLxoSLxoSLxpSb1pSb1pSb1oSbxoSLxoSLxoSLxpSb1oSLxoSLxpSb1pSb1oSLxpSb1oSLxoSLxoSLxoSLxoSLxpSb1oSLxpSb1oSLxpSb1pSbxpSb1oSLxpSb1pSb1pSbxpSb1oSLxoSLxpSbxoSLxoSLxpSbxpSb1oSLxpSbxoSbxpSb1pSbxpSb1oSbxpSbxpSb1pSb1pSb1pSb1pSbxoSLxpSb1pSb1pSb1pSb1pSb1oSLxoSLxpSb1oSbxpSbz////uO7QPAAAAanRSTlMA2/Ly8uXl0f3+/v3Sv8QSIREQEQ2+wq3JAsawmd0J+Z2G7uH5+feJcxsBHft2X3hWNyYpIyVjTMyr6NguUDpLo8hFPSljH4C5jChfLBf6oJ39GwjrtFcZVbPuC9bZIXrLzHwiGWnDxGoa/CJuBAAAAAFiS0dEAIgFHUgAAAAHdElNRQfkCR0UFzmvyxk1AAAA2klEQVQY0yVPxXaEUBTLwFQodepG3abu7i7U3b1NeP+/7WPI4iaL5CQXGTqu47iu42azjjIooCgpTsioEEWm2BOtpkp8lqKM5RWVVdVBENSglnWoZwPQiDya1IwWtqItpIU8j+3oYCfQpe6wJ+z12Yd+4w/kzYPIDZlhjBiNjo3nJianME0zg9lYc/MLEhexJC5jRVrFmu1fx4a4iS3G29jZ3ds/wCF5hONIJ2k7Ts3ZOS4uaaKr65vbu4i8fwAekyl2vj18sq7nl1emP769f6TBz6/v6Of3L5H/Qo07WKAmpdkAAAAASUVORK5CYII=" />
-                </svg>
-                HTML
-              </a>
-            </div>
-            <div class="product__item-text info__block-text">
-              Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
-              the mattis, leo quam aliquet congue.
-            </div>
-            <div class="product__item-info">
-              <div class="product__item-value">
-                <div class="product__item-price">
-                  $10
-                </div>
-                <button type="button" class="product__item-likes lnr">
-                  56
-                  <span class="button-title">add to favorites</span>
-                </button>
-                <button type="button" class="product__item-rating zmdi">
-                  <span class="button-title">read reviews</span>
-                </button>
+              <div class="product__item-source info__block-source">
+                <a class="product__item-author info__block-author" href="#">
+                  <span class="avatar" style="background-image: url(images/content/avatar.png);"></span>
+                  Artcorner
+                </a>
+                <a class="product__item-category info__block-category" href="#">
+                  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="15px"
+                    height="17px">
+                    <image x="0px" y="0px" width="15px" height="17px"
+                      xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAARCAMAAAA11AaTAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAABTVBMVEX///9pSb1pSb1oSLxpSbxoSbxoSLxpSb1pSb1oSLxpSb1oSLxoSLxoSbxoSLxpSbxoSLxoSLxpSb1pSb1pSb1pSb1oSLxpSb1oSLxpSb1oSLxpSb1oSLxpSb1oSLxoSLxpSb1pSbxpSb1oSLxoSbxpSb1oSLxpSbxoSbxoSbxoSLxoSbxpSb1oSLxoSLxoSLxpSb1pSb1pSb1oSbxoSLxoSLxoSLxpSb1oSLxoSLxpSb1pSb1oSLxpSb1oSLxoSLxoSLxoSLxoSLxpSb1oSLxpSb1oSLxpSb1pSbxpSb1oSLxpSb1pSb1pSbxpSb1oSLxoSLxpSbxoSLxoSLxpSbxpSb1oSLxpSbxoSbxpSb1pSbxpSb1oSbxpSbxpSb1pSb1pSb1pSb1pSbxoSLxpSb1pSb1pSb1pSb1pSb1oSLxoSLxpSb1oSbxpSbz////uO7QPAAAAanRSTlMA2/Ly8uXl0f3+/v3Sv8QSIREQEQ2+wq3JAsawmd0J+Z2G7uH5+feJcxsBHft2X3hWNyYpIyVjTMyr6NguUDpLo8hFPSljH4C5jChfLBf6oJ39GwjrtFcZVbPuC9bZIXrLzHwiGWnDxGoa/CJuBAAAAAFiS0dEAIgFHUgAAAAHdElNRQfkCR0UFzmvyxk1AAAA2klEQVQY0yVPxXaEUBTLwFQodepG3abu7i7U3b1NeP+/7WPI4iaL5CQXGTqu47iu42azjjIooCgpTsioEEWm2BOtpkp8lqKM5RWVVdVBENSglnWoZwPQiDya1IwWtqItpIU8j+3oYCfQpe6wJ+z12Yd+4w/kzYPIDZlhjBiNjo3nJianME0zg9lYc/MLEhexJC5jRVrFmu1fx4a4iS3G29jZ3ds/wCF5hONIJ2k7Ts3ZOS4uaaKr65vbu4i8fwAekyl2vj18sq7nl1emP769f6TBz6/v6Of3L5H/Qo07WKAmpdkAAAAASUVORK5CYII=" />
+                  </svg>
+                  HTML
+                </a>
+              </div>
+              <div class="product__item-text info__block-text">
+                Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+                the mattis, leo quam aliquet congue.
+              </div>
+              <div class="product__item-info">
+                <div class="product__item-value">
+                  <div class="product__item-price">
+                    $10
+                  </div>
+                  <button type="button" class="product__item-likes lnr">
+                    56
+                    <span class="button-title">add to favorites</span>
+                  </button>
+                  <button type="button" class="product__item-rating zmdi">
+                    <span class="button-title">read reviews</span>
+                  </button>
                 </div>
                 <button class="product__item-basket lnr">
                   68
                   <span class="button-title">add to cart</span>
                 </button>
+              </div>
             </div>
-          </div>
           </div>
           <div class="product__item mix category-wordpress" data-order="4">
-          <a class="product__item-img" style="background-image: url(images/content/Img.jpg);" href="#"></a>
-          <div class="product__item-content info__block">
-            <a class="product__item-title info__block-title" href="#">
-              E-commerce Shopping Cart
-            </a>
-            <div class="product__item-source info__block-source">
-              <a class="product__item-author info__block-author" href="#">
-                <span class="avatar" style="background-image: url(images/content/avatar.png);"></span>
-                Design-Hub
+            <a class="product__item-img" style="background-image: url(images/content/Img.jpg);" href="#"></a>
+            <div class="product__item-content info__block">
+              <a class="product__item-title info__block-title" href="#">
+                E-commerce Shopping Cart
               </a>
-              <a class="product__item-category info__block-category" href="#">
-                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16px"
-                  height="16px">
-                  <path fill-rule="evenodd" fill="rgb(115, 71, 193)"
-                    d="M0.167,7.665 C0.167,11.808 3.524,15.166 7.667,15.166 C11.808,15.166 15.167,11.808 15.167,7.665 C15.167,3.524 11.808,0.165 7.667,0.165 C3.524,0.165 0.167,3.524 0.167,7.665 ZM0.744,7.665 C0.744,6.662 0.961,5.710 1.344,4.848 L4.646,13.895 C2.337,12.774 0.744,10.405 0.744,7.665 ZM7.667,14.587 C6.987,14.587 6.331,14.488 5.711,14.306 L7.788,8.272 L9.916,14.101 C9.930,14.135 9.947,14.165 9.965,14.195 C9.246,14.449 8.472,14.587 7.667,14.587 ZM13.261,7.536 C13.655,6.548 13.788,5.759 13.788,5.056 C13.788,4.802 13.770,4.566 13.740,4.344 C14.280,5.331 14.587,6.462 14.587,7.666 C14.587,10.220 13.204,12.449 11.147,13.648 L13.261,7.536 ZM11.768,5.407 C12.031,5.868 12.339,6.461 12.339,7.316 C12.339,7.909 12.163,8.654 11.812,9.554 L11.122,11.860 L8.620,4.421 C9.038,4.397 9.412,4.355 9.412,4.355 C9.785,4.310 9.740,3.763 9.368,3.784 C9.368,3.784 8.247,3.872 7.523,3.872 C6.843,3.872 5.701,3.784 5.701,3.784 C5.327,3.763 5.284,4.333 5.656,4.355 C5.656,4.355 6.010,4.397 6.383,4.421 L7.461,7.376 L5.946,11.918 L3.425,4.421 C3.842,4.397 4.218,4.355 4.218,4.355 C4.591,4.310 4.545,3.763 4.173,3.784 C4.173,3.784 3.053,3.872 2.328,3.872 C2.198,3.872 2.046,3.869 1.883,3.864 C3.121,1.985 5.249,0.744 7.667,0.744 C9.469,0.744 11.109,1.433 12.340,2.561 C12.311,2.559 12.281,2.556 12.251,2.556 C11.570,2.556 11.089,3.147 11.089,3.784 C11.089,4.355 11.418,4.837 11.768,5.407 Z" />
-                </svg>
-                Plugin
-              </a>
-            </div>
-            <div class="product__item-text info__block-text">
-              Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
-              the mattis, leo quam aliquet congue.
-            </div>
-            <div class="product__item-info">
-              <div class="product__item-value">
-                <div class="product__item-price">
-                  $10 - 50
-                </div>
-                <button type="button" class="product__item-likes lnr">
-                  90
-                  <span class="button-title">add to favorites</span>
-                </button>
-                <button type="button" class="product__item-rating zmdi">
-                  <span class="button-title">read reviews</span>
-                </button>
+              <div class="product__item-source info__block-source">
+                <a class="product__item-author info__block-author" href="#">
+                  <span class="avatar" style="background-image: url(images/content/avatar.png);"></span>
+                  Design-Hub
+                </a>
+                <a class="product__item-category info__block-category" href="#">
+                  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="16px"
+                    height="16px">
+                    <path fill-rule="evenodd" fill="rgb(115, 71, 193)"
+                      d="M0.167,7.665 C0.167,11.808 3.524,15.166 7.667,15.166 C11.808,15.166 15.167,11.808 15.167,7.665 C15.167,3.524 11.808,0.165 7.667,0.165 C3.524,0.165 0.167,3.524 0.167,7.665 ZM0.744,7.665 C0.744,6.662 0.961,5.710 1.344,4.848 L4.646,13.895 C2.337,12.774 0.744,10.405 0.744,7.665 ZM7.667,14.587 C6.987,14.587 6.331,14.488 5.711,14.306 L7.788,8.272 L9.916,14.101 C9.930,14.135 9.947,14.165 9.965,14.195 C9.246,14.449 8.472,14.587 7.667,14.587 ZM13.261,7.536 C13.655,6.548 13.788,5.759 13.788,5.056 C13.788,4.802 13.770,4.566 13.740,4.344 C14.280,5.331 14.587,6.462 14.587,7.666 C14.587,10.220 13.204,12.449 11.147,13.648 L13.261,7.536 ZM11.768,5.407 C12.031,5.868 12.339,6.461 12.339,7.316 C12.339,7.909 12.163,8.654 11.812,9.554 L11.122,11.860 L8.620,4.421 C9.038,4.397 9.412,4.355 9.412,4.355 C9.785,4.310 9.740,3.763 9.368,3.784 C9.368,3.784 8.247,3.872 7.523,3.872 C6.843,3.872 5.701,3.784 5.701,3.784 C5.327,3.763 5.284,4.333 5.656,4.355 C5.656,4.355 6.010,4.397 6.383,4.421 L7.461,7.376 L5.946,11.918 L3.425,4.421 C3.842,4.397 4.218,4.355 4.218,4.355 C4.591,4.310 4.545,3.763 4.173,3.784 C4.173,3.784 3.053,3.872 2.328,3.872 C2.198,3.872 2.046,3.869 1.883,3.864 C3.121,1.985 5.249,0.744 7.667,0.744 C9.469,0.744 11.109,1.433 12.340,2.561 C12.311,2.559 12.281,2.556 12.251,2.556 C11.570,2.556 11.089,3.147 11.089,3.784 C11.089,4.355 11.418,4.837 11.768,5.407 Z" />
+                  </svg>
+                  Plugin
+                </a>
+              </div>
+              <div class="product__item-text info__block-text">
+                Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+                the mattis, leo quam aliquet congue.
+              </div>
+              <div class="product__item-info">
+                <div class="product__item-value">
+                  <div class="product__item-price">
+                    $10 - 50
+                  </div>
+                  <button type="button" class="product__item-likes lnr">
+                    90
+                    <span class="button-title">add to favorites</span>
+                  </button>
+                  <button type="button" class="product__item-rating zmdi">
+                    <span class="button-title">read reviews</span>
+                  </button>
                 </div>
                 <button class="product__item-basket lnr">
                   45
                   <span class="button-title">add to cart</span>
                 </button>
+              </div>
             </div>
-          </div>
           </div>
           <div class="product__item mix category-joomla category-new" data-order="5">
-          <a class="product__item-img" style="background-image: url(images/content/Img.jpg);" href="#"></a>
-          <div class="product__item-content info__block">
-            <a class="product__item-title info__block-title" href="#">
-              Marketify Coffee Shop
-            </a>
-            <div class="product__item-source info__block-source">
-              <a class="product__item-author info__block-author" href="#">
-                <span class="avatar" style="background-image: url(images/content/avatar.png);"></span>
-                AazzTech
+            <a class="product__item-img" style="background-image: url(images/content/Img.jpg);" href="#"></a>
+            <div class="product__item-content info__block">
+              <a class="product__item-title info__block-title" href="#">
+                Marketify Coffee Shop
               </a>
-              <a class="product__item-category info__block-category" href="#">
-                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="13px"
-                  height="17px">
-                  <path fill-rule="evenodd" fill="rgb(115, 71, 193)"
-                    d="M11.182,16.999 L1.818,16.999 C0.816,16.999 -0.000,16.188 -0.000,15.189 L-0.000,1.808 C-0.000,0.811 0.816,-0.001 1.818,-0.001 L8.681,-0.001 L13.000,4.281 L13.000,15.189 C13.000,16.188 12.184,16.999 11.182,16.999 ZM11.859,4.720 L9.525,4.727 C8.829,4.727 8.264,4.164 8.264,3.472 L8.264,1.102 L1.818,1.108 C1.430,1.108 1.114,1.422 1.114,1.808 L1.114,15.189 C1.114,15.577 1.430,15.891 1.818,15.891 L11.182,15.891 C11.570,15.891 11.885,15.577 11.886,15.189 L11.859,4.720 ZM9.020,8.900 C9.836,9.200 10.220,9.622 10.220,10.271 C10.220,11.043 9.623,11.698 8.354,11.698 C7.826,11.698 7.305,11.561 7.044,11.418 L7.257,10.558 C7.538,10.702 7.970,10.845 8.416,10.845 C8.896,10.845 9.150,10.646 9.150,10.346 C9.150,10.059 8.931,9.896 8.375,9.697 C7.607,9.431 7.106,9.008 7.106,8.340 C7.106,7.555 7.765,6.954 8.855,6.954 C9.376,6.954 9.760,7.064 10.035,7.187 L9.802,8.026 C9.616,7.937 9.287,7.808 8.834,7.808 C8.382,7.808 8.162,8.012 8.162,8.251 C8.162,8.544 8.423,8.674 9.020,8.900 ZM4.627,10.005 C4.490,10.005 4.367,9.998 4.271,9.985 L4.271,11.629 L3.235,11.629 L3.235,7.091 C3.558,7.036 4.010,6.995 4.648,6.995 C5.293,6.995 5.752,7.118 6.061,7.363 C6.356,7.596 6.555,7.978 6.555,8.429 C6.555,8.879 6.404,9.261 6.130,9.521 C5.773,9.855 5.245,10.005 4.627,10.005 ZM4.703,7.780 C4.490,7.780 4.346,7.800 4.271,7.821 L4.271,9.179 C4.360,9.200 4.470,9.206 4.621,9.206 C5.176,9.206 5.519,8.927 5.519,8.456 C5.519,8.033 5.224,7.780 4.703,7.780 Z" />
-                </svg>
-                PSD
-              </a>
-            </div>
-            <div class="product__item-text info__block-text">
-              Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
-              the mattis, leo quam aliquet congue.
-            </div>
-            <div class="product__item-info">
-              <div class="product__item-value">
-                <div class="product__item-price">
-                  $10 - 50
-                </div>
-                <button type="button" class="product__item-likes lnr">
-                  48
-                  <span class="button-title">add to favorites</span>
-                </button>
+              <div class="product__item-source info__block-source">
+                <a class="product__item-author info__block-author" href="#">
+                  <span class="avatar" style="background-image: url(images/content/avatar.png);"></span>
+                  AazzTech
+                </a>
+                <a class="product__item-category info__block-category" href="#">
+                  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="13px"
+                    height="17px">
+                    <path fill-rule="evenodd" fill="rgb(115, 71, 193)"
+                      d="M11.182,16.999 L1.818,16.999 C0.816,16.999 -0.000,16.188 -0.000,15.189 L-0.000,1.808 C-0.000,0.811 0.816,-0.001 1.818,-0.001 L8.681,-0.001 L13.000,4.281 L13.000,15.189 C13.000,16.188 12.184,16.999 11.182,16.999 ZM11.859,4.720 L9.525,4.727 C8.829,4.727 8.264,4.164 8.264,3.472 L8.264,1.102 L1.818,1.108 C1.430,1.108 1.114,1.422 1.114,1.808 L1.114,15.189 C1.114,15.577 1.430,15.891 1.818,15.891 L11.182,15.891 C11.570,15.891 11.885,15.577 11.886,15.189 L11.859,4.720 ZM9.020,8.900 C9.836,9.200 10.220,9.622 10.220,10.271 C10.220,11.043 9.623,11.698 8.354,11.698 C7.826,11.698 7.305,11.561 7.044,11.418 L7.257,10.558 C7.538,10.702 7.970,10.845 8.416,10.845 C8.896,10.845 9.150,10.646 9.150,10.346 C9.150,10.059 8.931,9.896 8.375,9.697 C7.607,9.431 7.106,9.008 7.106,8.340 C7.106,7.555 7.765,6.954 8.855,6.954 C9.376,6.954 9.760,7.064 10.035,7.187 L9.802,8.026 C9.616,7.937 9.287,7.808 8.834,7.808 C8.382,7.808 8.162,8.012 8.162,8.251 C8.162,8.544 8.423,8.674 9.020,8.900 ZM4.627,10.005 C4.490,10.005 4.367,9.998 4.271,9.985 L4.271,11.629 L3.235,11.629 L3.235,7.091 C3.558,7.036 4.010,6.995 4.648,6.995 C5.293,6.995 5.752,7.118 6.061,7.363 C6.356,7.596 6.555,7.978 6.555,8.429 C6.555,8.879 6.404,9.261 6.130,9.521 C5.773,9.855 5.245,10.005 4.627,10.005 ZM4.703,7.780 C4.490,7.780 4.346,7.800 4.271,7.821 L4.271,9.179 C4.360,9.200 4.470,9.206 4.621,9.206 C5.176,9.206 5.519,8.927 5.519,8.456 C5.519,8.033 5.224,7.780 4.703,7.780 Z" />
+                  </svg>
+                  PSD
+                </a>
+              </div>
+              <div class="product__item-text info__block-text">
+                Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+                the mattis, leo quam aliquet congue.
+              </div>
+              <div class="product__item-info">
+                <div class="product__item-value">
+                  <div class="product__item-price">
+                    $10 - 50
+                  </div>
+                  <button type="button" class="product__item-likes lnr">
+                    48
+                    <span class="button-title">add to favorites</span>
+                  </button>
                 </div>
                 <button class="product__item-basket lnr">
                   50
                   <span class="button-title">add to cart</span>
                 </button>
+              </div>
             </div>
-          </div>
           </div>
           <div class="product__item mix category-joomla" data-order="6">
-          <a class="product__item-img" style="background-image: url(images/content/Img.jpg);" href="#"></a>
-          <div class="product__item-content info__block">
-            <a class="product__item-title info__block-title" href="#">
-              Bryson - Portfolio Template
-            </a>
-            <div class="product__item-source info__block-source">
-              <a class="product__item-author info__block-author" href="#">
-                <span class="avatar" style="background-image: url(images/content/avatar.png);"></span>
-                Coder-Lab
+            <a class="product__item-img" style="background-image: url(images/content/Img.jpg);" href="#"></a>
+            <div class="product__item-content info__block">
+              <a class="product__item-title info__block-title" href="#">
+                Bryson - Portfolio Template
               </a>
-              <a class="product__item-category info__block-category" href="#">
-                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="15px"
-                  height="17px">
-                  <image x="0px" y="0px" width="15px" height="17px"
-                    xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAARCAMAAAA11AaTAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAABTVBMVEX///9pSb1pSb1oSLxpSbxoSbxoSLxpSb1pSb1oSLxpSb1oSLxoSLxoSbxoSLxpSbxoSLxoSLxpSb1pSb1pSb1pSb1oSLxpSb1oSLxpSb1oSLxpSb1oSLxpSb1oSLxoSLxpSb1pSbxpSb1oSLxoSbxpSb1oSLxpSbxoSbxoSbxoSLxoSbxpSb1oSLxoSLxoSLxpSb1pSb1pSb1oSbxoSLxoSLxoSLxpSb1oSLxoSLxpSb1pSb1oSLxpSb1oSLxoSLxoSLxoSLxoSLxpSb1oSLxpSb1oSLxpSb1pSbxpSb1oSLxpSb1pSb1pSbxpSb1oSLxoSLxpSbxoSLxoSLxpSbxpSb1oSLxpSbxoSbxpSb1pSbxpSb1oSbxpSbxpSb1pSb1pSb1pSb1pSbxoSLxpSb1pSb1pSb1pSb1pSb1oSLxoSLxpSb1oSbxpSbz////uO7QPAAAAanRSTlMA2/Ly8uXl0f3+/v3Sv8QSIREQEQ2+wq3JAsawmd0J+Z2G7uH5+feJcxsBHft2X3hWNyYpIyVjTMyr6NguUDpLo8hFPSljH4C5jChfLBf6oJ39GwjrtFcZVbPuC9bZIXrLzHwiGWnDxGoa/CJuBAAAAAFiS0dEAIgFHUgAAAAHdElNRQfkCR0UFzmvyxk1AAAA2klEQVQY0yVPxXaEUBTLwFQodepG3abu7i7U3b1NeP+/7WPI4iaL5CQXGTqu47iu42azjjIooCgpTsioEEWm2BOtpkp8lqKM5RWVVdVBENSglnWoZwPQiDya1IwWtqItpIU8j+3oYCfQpe6wJ+z12Yd+4w/kzYPIDZlhjBiNjo3nJianME0zg9lYc/MLEhexJC5jRVrFmu1fx4a4iS3G29jZ3ds/wCF5hONIJ2k7Ts3ZOS4uaaKr65vbu4i8fwAekyl2vj18sq7nl1emP769f6TBz6/v6Of3L5H/Qo07WKAmpdkAAAAASUVORK5CYII=" />
-                </svg>
-                HTML
-              </a>
-            </div>
-            <div class="product__item-text info__block-text">
-              Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
-              the mattis, leo quam aliquet congue.
-            </div>
-            <div class="product__item-info">
-              <div class="product__item-value">
-                <div class="product__item-price">
-                  $10
-                </div>
-                <button type="button" class="product__item-likes lnr">
-                  56
-                  <span class="button-title">add to favorites</span>
-                </button>
-                <button type="button" class="product__item-rating zmdi">
-                  <span class="button-title">read reviews</span>
-                </button>
+              <div class="product__item-source info__block-source">
+                <a class="product__item-author info__block-author" href="#">
+                  <span class="avatar" style="background-image: url(images/content/avatar.png);"></span>
+                  Coder-Lab
+                </a>
+                <a class="product__item-category info__block-category" href="#">
+                  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="15px"
+                    height="17px">
+                    <image x="0px" y="0px" width="15px" height="17px"
+                      xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAARCAMAAAA11AaTAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAABTVBMVEX///9pSb1pSb1oSLxpSbxoSbxoSLxpSb1pSb1oSLxpSb1oSLxoSLxoSbxoSLxpSbxoSLxoSLxpSb1pSb1pSb1pSb1oSLxpSb1oSLxpSb1oSLxpSb1oSLxpSb1oSLxoSLxpSb1pSbxpSb1oSLxoSbxpSb1oSLxpSbxoSbxoSbxoSLxoSbxpSb1oSLxoSLxoSLxpSb1pSb1pSb1oSbxoSLxoSLxoSLxpSb1oSLxoSLxpSb1pSb1oSLxpSb1oSLxoSLxoSLxoSLxoSLxpSb1oSLxpSb1oSLxpSb1pSbxpSb1oSLxpSb1pSb1pSbxpSb1oSLxoSLxpSbxoSLxoSLxpSbxpSb1oSLxpSbxoSbxpSb1pSbxpSb1oSbxpSbxpSb1pSb1pSb1pSb1pSbxoSLxpSb1pSb1pSb1pSb1pSb1oSLxoSLxpSb1oSbxpSbz////uO7QPAAAAanRSTlMA2/Ly8uXl0f3+/v3Sv8QSIREQEQ2+wq3JAsawmd0J+Z2G7uH5+feJcxsBHft2X3hWNyYpIyVjTMyr6NguUDpLo8hFPSljH4C5jChfLBf6oJ39GwjrtFcZVbPuC9bZIXrLzHwiGWnDxGoa/CJuBAAAAAFiS0dEAIgFHUgAAAAHdElNRQfkCR0UFzmvyxk1AAAA2klEQVQY0yVPxXaEUBTLwFQodepG3abu7i7U3b1NeP+/7WPI4iaL5CQXGTqu47iu42azjjIooCgpTsioEEWm2BOtpkp8lqKM5RWVVdVBENSglnWoZwPQiDya1IwWtqItpIU8j+3oYCfQpe6wJ+z12Yd+4w/kzYPIDZlhjBiNjo3nJianME0zg9lYc/MLEhexJC5jRVrFmu1fx4a4iS3G29jZ3ds/wCF5hONIJ2k7Ts3ZOS4uaaKr65vbu4i8fwAekyl2vj18sq7nl1emP769f6TBz6/v6Of3L5H/Qo07WKAmpdkAAAAASUVORK5CYII=" />
+                  </svg>
+                  HTML
+                </a>
+              </div>
+              <div class="product__item-text info__block-text">
+                Nunc placerat mi id nisi interdum mollis. Praesent pharetra, justo ut scelerisque
+                the mattis, leo quam aliquet congue.
+              </div>
+              <div class="product__item-info">
+                <div class="product__item-value">
+                  <div class="product__item-price">
+                    $10
+                  </div>
+                  <button type="button" class="product__item-likes lnr">
+                    56
+                    <span class="button-title">add to favorites</span>
+                  </button>
+                  <button type="button" class="product__item-rating zmdi">
+                    <span class="button-title">read reviews</span>
+                  </button>
                 </div>
                 <button class="product__item-basket lnr">
                   68
                   <span class="button-title">add to cart</span>
                 </button>
+              </div>
             </div>
-          </div>
           </div>
         </div>
         <div class="products__bottom-btn">
-          <button type="button" data-filter=".category-new">All New Products</button>
+          <button class="products__new" type="button" data-filter=".category-new">All New Products</button>
         </div>
       </div>
     </div>
@@ -499,8 +611,9 @@
 
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script scr="js/libs.min.js"></script>
-  <script scr="js/main.js"></script>
+  <script src="js/libs.min.js"></script>
+  <script src="slick/slick.min.js"></script>
+  <script src="js/main.js"></script>
 </body>
 
 </html>
