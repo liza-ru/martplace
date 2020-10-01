@@ -524,9 +524,13 @@ html {
     }
 
     &__btn {
-        position: absolute;
         line-height: 32px;
         right: 62px;
+        float: right;
+    }
+
+    &__btn-title {
+        margin-right: 17px
     }
 
     &__btn-filter {
@@ -539,6 +543,45 @@ html {
         border: none;
         outline: none;
         cursor: pointer;
+    }
+
+    .filter__menu-items {
+        display: none;
+        position: absolute;
+        right: 10px;
+        margin-top: 12px;
+        border-radius: 3px;
+        background-color: #fff;
+        width: 183px;
+        box-shadow: 0px 5px 40px 0px rgba(82, 85, 90, 0.2);
+        padding: 20px 28px;
+        z-index: 1;
+    }
+
+    .filter__menu-items:before {
+        content: '';
+        border: 10px solid transparent;
+        border-bottom: 14px solid #fff;
+        position: absolute;
+        left: 80%;
+        top: -24px;
+    }
+
+    .filter__menu-link {
+        color: #747b86;
+        display: block;
+        font-size: 15px;
+        line-height: 28px;
+        
+    }
+
+    .filter__menu-link:hover,
+    .hover {
+        color: $blue_btn;
+    }
+
+    .products__btn:hover .filter__menu-items {
+        display: block;
     }
 
     &__inner {
