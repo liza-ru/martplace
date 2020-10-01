@@ -47,7 +47,7 @@ body {
 
 .category-btn {
     font-size: 15px;
-    
+
     button {
         max-height: 32px;
         padding: 9px 20px;
@@ -57,9 +57,9 @@ body {
         cursor: pointer;
         outline: none;
 
-         &+button {
-             margin-left: 5px;
-         }
+        &+button {
+            margin-left: 5px;
+        }
     }
 }
 
@@ -79,8 +79,8 @@ body {
             position: relative;
             padding-left: 33px;
             padding-right: 19px;
-            
-          
+
+
             .avatar {
                 height: 28px;
                 width: 28px;
@@ -90,10 +90,10 @@ body {
                 top: 50%;
                 transform: translateY(-50%);
             }
-            
+
         }
 
-         .info__block-category {
+        .info__block-category {
             color: $purple_btn;
             position: relative;
             padding-left: 24px;
@@ -114,6 +114,3 @@ body {
     }
 
 }
-
-
-

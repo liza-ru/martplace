@@ -231,7 +231,7 @@ html {
     }
 
 
-    .product-btn:active {
+    .product-btn:hover {
         background-color: #fff;
         color: #0674ec;
     }
@@ -572,7 +572,7 @@ html {
         display: block;
         font-size: 15px;
         line-height: 28px;
-        
+
     }
 
     .filter__menu-link:hover,
@@ -629,6 +629,40 @@ html {
         width: 361px;
         height: 230px;
         display: block;
+    }
+
+    .product__item-img:hover {
+        background-image: -ms-linear-gradient(18deg, rgb(6, 116, 236) 0%, rgb(61, 94, 215) 46%, rgb(115, 71, 193) 100%);
+        opacity: .9;
+    }
+
+    .product__info-btn {
+        text-align: center;
+        line-height: 230px;
+    }
+
+    .info-btn {
+        display: none;
+        background-color: transparent;
+        border: 1px solid #fff;
+        border-radius: 30px;
+        color: #fff;
+        font-size: 15px;
+        padding: 14px 28px;
+        outline: none;
+
+        &+.info-btn {
+            margin-left: 10px;
+        }
+
+        &:hover {
+            background-color: #fff;
+            color: #0674ec;
+        }
+    }
+
+    .product__item-img:hover .info-btn {
+        display: inline-block;
     }
 
     .product__item-content {
